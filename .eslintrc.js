@@ -1,7 +1,7 @@
 module.exports = {
     extends: [
         '@antfu/eslint-config',
-        '@unocss/eslint-config',
+        // '@unocss/eslint-config',
     ],
     rules: {
         // 保存代码时缩进4个空格

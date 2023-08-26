@@ -1,3 +1,4 @@
+自己写vue项目的eslint规则...
 <p align="center">
 😃 😃 😃 
 </p>
@@ -11,9 +12,10 @@
 
 ## 随便写点
 <p>
-这里的规则是在antfu大佬的 <a href="https://www.npmjs.com/package/@antfu/eslint-config" target="_blank">@antfu/eslint-config</a> 的基础上补充自己的规则的,用了一下，感觉还不错，写起来挺舒服的，还有个原因是赖得一个个细化去配置这些规则😂；然后写项目会用原子化css，选择了 <a href="https://unocss.dev/" target="_blank">UnoCSS</a> , 规则也是用了 <a href="https://www.npmjs.com/package/@unocss/eslint-config" target="_blank">@unocss/eslint-config</a> 
-
+这里的规则是在antfu大佬的 <a href="https://www.npmjs.com/package/@antfu/eslint-config" target="_blank">@antfu/eslint-config</a> 的基础上补充自己的规则的,用了一下，感觉还不错，写起来挺舒服的，还有个原因是赖得一个个细化去配置这些规则😂； 
 </p>
+
+<!-- 然后写项目会用原子化css，选择了 <a href="https://unocss.dev/" target="_blank">UnoCSS</a> , 规则也是用了 <a href="https://www.npmjs.com/package/@unocss/eslint-config" target="_blank">@unocss/eslint-config</a> -->
 
 
 <pre>
@@ -28,13 +30,14 @@
 ## 使用方法
  - 安装（npm、pnpm、yarn）自己项目用的包管理器就行
 ```bash
-pnpm i @cooj/eslint-config-vue
+pnpm i -D @antfu/eslint-config @cooj/eslint-config-vue
 ```
  - 配置
 ```bash
 # .eslintrc
     "extends": [
         ...
++      "@antfu/eslint-config",
 +      "@cooj/eslint-config-vue"
     ]
 ```
