@@ -1,21 +1,22 @@
 {
-    "name": "@cooj/eslint-config-vue",
-    "version": "0.1.2",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "lint": "eslint . --ext .ts",
-        "lint:fix": "eslint . --ext .ts --fix"
-    },
-    "keywords": [],
-    "author": "cooj (https://github.com/cooj/)",
-    "license": "ISC",
-    "dependencies": {
-        "@antfu/eslint-config": "^0.41.0"
-    },
-    "devDependencies": {
-        "changelogithub": "^0.13.1",
-        "eslint": "^8.51.0",
-        "typescript": "^5.2.2"
-    }
+  "name": "@cooj/eslint-config-vue",
+  "version": "0.1.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "release": "git push && pnpx changelogen@latest --release"
+  },
+  "keywords": [],
+  "author": "cooj (https://github.com/cooj/)",
+  "license": "ISC",
+  "dependencies": {
+    "@antfu/eslint-config": "^0.41.0"
+  },
+  "devDependencies": {
+    "changelogithub": "^0.13.1",
+    "eslint": "^8.51.0",
+    "typescript": "^5.2.2"
+  }
 }
